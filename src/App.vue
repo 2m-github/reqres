@@ -1,18 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer app>
-      <!-- -->
-      menu
-    </v-navigation-drawer>
-
-    <v-app-bar app>
-      <!-- -->
-    </v-app-bar>
-    <!-- 根据应用程序组件调整内容大小 -->
+    
+    <navigation />
+    
     <v-main>
       <!-- 为应用程序提供正确的插槽 -->
       <v-container fluid>
-        <!-- 如果使用vue-router -->
+        
         <router-view></router-view>
       </v-container>
     </v-main>
@@ -25,12 +19,16 @@
 
 <script>
 
-
+import navigation from './components/Navigation.vue'
 export default {
   name: 'App',
+  components: {
+    navigation
+  },
+  data() {
+    return {
 
-  data: () => ({
-    //
-  }),
+    }
+  }
 };
 </script>
