@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 import auth from "./auth.js";
+import users from "./users.js";
 export default new Vuex.Store({
   state: {
     drawer:false
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     }
   },
   modules: {
-    auth
+    auth,
+    users
   }
 })

@@ -6,8 +6,10 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use( function(config) {
-    console.log('token',store.state.auth.token)
-    
+    console.log('token',store.state.auth.token,config)
+    config['headers'] = {
+        Authorization: `Bearer ${store.state.auth.token}`
+    }
     if (store.state.auth.token !== null) {
         config['headers'] = {
             Authorization: `Bearer ${store.state.auth.token}`

@@ -4,10 +4,10 @@
     <router-link to="/home">Home</router-link> 
     <router-link to="/about">About</router-link>
     
-    <div v-for="(user, index) in users" :key="index">
-      <p>{{user.email}}</p>
-      <img :src="user.avatar" alt="" >
-    </div>
+    <dl class="person_list" v-for="(user, index) in users" :key="index">
+      <dt><img :src="user.avatar" alt="" ></dt>
+      <dd><p>{{user.email}}</p></dd>
+    </dl>
   </div>
 </template>
 

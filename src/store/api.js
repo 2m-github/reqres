@@ -19,9 +19,11 @@ import store from '@/store'
 
 export async function loginAPI(info){
     const response = await http.post('/api/login',info)
-        
+    
     if(response.status === 200){
+        localStorage.setItem('token', response.data.token)
         store.commit( 'auth/setToken', response.data.token);
+        
     }
     return response;
 }
@@ -36,5 +38,25 @@ export function getUsersAPI(){
             reject(err)
         })
     })
+}
+
+export async function putUsersAPI(info){
+    const response = await http.put('/api/users/2',info)
+
+    if (response.status === 200) {
+        store.dispatch('users/setUpdateState', true)
+    }
+    return response;
+}
+
+export async function getDelayUsersAPI(){
+    const response = await http.get('/api/users?page=2')
+
+    return response.data;
+}
+export async function delUsersAPI(){
+    const response = await http.delete('/api/users/2')
+
+    return response;
 }
 
