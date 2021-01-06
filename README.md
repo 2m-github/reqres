@@ -1,5 +1,12 @@
 # reqres
 
+### axios 
+```
+const instance = axios.create({
+    baseURL : 'https://reqres.in/'
+});
+```
+
 ## Project setup
 ```
 yarn install
