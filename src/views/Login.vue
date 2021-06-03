@@ -115,6 +115,7 @@
     <p>branch merge test </p>
     <p>B branch</p>
     <h4>B branch 2</h4>
+    <p>master</p>
   </v-form>
 </template>
 
