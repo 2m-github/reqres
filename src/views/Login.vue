@@ -112,6 +112,8 @@
     </v-btn>
     <p>token ==== {{ token }}</p>
     <p>branch merge test aasfasdf</p>
+    <p>branch merge test </p>
+    <p>B branch</p>
   </v-form>
 </template>
 
