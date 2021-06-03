@@ -57,8 +57,7 @@
     </v-btn>
     {{$store.state.auth.token}}
 
-    <v-simple-table>
-      <template v-slot:default>
+    <table>
         <thead>
           <tr>
             <th class="text-left">
@@ -72,23 +71,53 @@
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="table_result">
           <tr
             v-for="item in users"
             :key="item.id"
           >
             <td>{{ item.id }}</td>
             <td>{{ item.email }}</td>
-            <td><img :src="item.avatar" alt=""></td>
+            <td>
+              <a href="javascript:;" @click="goPage(2,2)"><img :src="item.avatar" alt=""></a>
+            </td>
           </tr>
         </tbody>
-      </template>
-    </v-simple-table>
+      
+    </table>
+
+    <!-- token api test -->
+    <v-text-field
+      v-model="email2"
+      :rules="emailRules"
+      label="E-mail"
+      value="eve.holt@reqres.in"
+      required
+    ></v-text-field>
+
+    <v-text-field
+      v-model="password2"
+      label="Password"
+      type="password"
+      value="pistol"
+      required
+    ></v-text-field>
+
+    <v-btn
+      color="success"
+      class="mr-4"
+      @click="loginTokenTest()"
+    >
+      LOGIN
+    </v-btn>
+    <p>token ==== {{ token }}</p>
+    <p>branch mlee </p>
   </v-form>
 </template>
 
 <script>
 import * as api from '@/store/api'
+import Vue from 'vue'
 export default {
     name: 'Login',
     data(){
@@ -102,21 +131,27 @@ export default {
 
             name:'',
             job:'',
-            users:[]
+            users:[],
+            email2: '',
+            password2: '',
+            token:null
         }
     },
     created(){
       let token = localStorage.getItem('token')
       if(token){
-        this.userDelay()
+         this.getUsers()
+         
       }
+
+      
     },
     methods:{
         login(){
             api.loginAPI({email: this.email, password: this.password})
             .then( res => {
                 console.log('page login token ', res.data.token, res.status)
-                this.userDelay()
+                this.getUsers()
             })
             .catch( err => {
                 console.log('page login error ', err)
@@ -130,6 +165,14 @@ export default {
             .catch( err => {
                 console.log('put error ', err)
             })
+        },
+        getUsers(){
+          api.getUsersAPI().then( res => {
+            
+            this.users = res.data
+          }).catch( err => {
+            console.log('delay error', err)
+          })
         },
         userDelay(){
           api.getDelayUsersAPI().then( res => {
@@ -145,7 +188,18 @@ export default {
           }).catch( err => {
             console.log('delete error ', err)
           })
+        },
+        loginTokenTest(){
+          api.tokenAPI({email: this.email2, password: this.password2}).then(res => {
+            console.log("res=========",res.data.token)
+              this.token = res.data.token
+          }).catch(err => {
+            console.log('token login error ', err)
+          })
         }
+    },
+    mounted(){
+    
     }
 }
 </script>

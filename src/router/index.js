@@ -21,6 +21,25 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: pageLoad('Login')
+  },
+  {
+    path: '/boardlist',
+    name: 'BoardList',
+    component: pageLoad('BoardList')
+
+  },
+  {
+    path: '/boarddetail/:uid',
+    name: 'BoardDetail',
+    // beforeEnter:(to,from,next) => {
+    //   next('/')
+    // },
+    component: pageLoad('BoardDetail')
+  },
+  {
+    path: '/slot',
+    name: 'slot',
+    component: pageLoad('slot')
   }
 ]
 

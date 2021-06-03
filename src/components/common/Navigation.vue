@@ -2,7 +2,6 @@
   <v-container>
 
     <v-btn
-          color="pink"
           dark
           @click.stop="setDrawer(true)"
         >

@@ -1,6 +1,7 @@
 import http from './http';
 import store from '@/store'
 
+
 // export async function loginAPI(info){
 //     return new Promise((resolve, reject) => {
 //         http.post('/api/login',info)
@@ -60,3 +61,17 @@ export async function delUsersAPI(){
     return response;
 }
 
+
+
+
+export function tokenAPI(signInfo){
+    return new Promise((resolve, reject) => {
+        
+        return http.post('/api/register',signInfo).then(res => {
+            resolve(res)
+        }).catch(err => {
+            reject(err)
+        })
+        
+    })
+}
