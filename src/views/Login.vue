@@ -116,6 +116,7 @@
     <p>B branch</p>
     <h4>B branch 2</h4>
     <p>master</p>
+    <span>123</span>
   </v-form>
 </template>
 
