@@ -111,13 +111,12 @@
       LOGIN
     </v-btn>
     <p>token ==== {{ token }}</p>
-    <p>branch mlee </p>
+    <p>branch merge test </p>
   </v-form>
 </template>
 
 <script>
 import * as api from '@/store/api'
-import Vue from 'vue'
 export default {
     name: 'Login',
     data(){
