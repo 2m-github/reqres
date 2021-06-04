@@ -202,13 +202,14 @@ export default {
           api.tokenAPI({email: this.email2, password: this.password2}).then(res => {
             console.log("res=========",res.data.token)
               this.token = res.data.token
+              console.log("변수", {[this.token]:'토큰'})
           }).catch(err => {
             console.log('token login error ', err)
           })
         }
     },
     mounted(){
-    
+      
     }
 }
 </script>
