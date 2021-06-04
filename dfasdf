@@ -1,0 +1,105 @@
+[33mcommit 7b441a8a60cfd0a918d9d99318e6ab4817867059[m[33m ([m[1;36mHEAD -> [m[1;32mmlee[m[33m, [m[1;31morigin/mlee[m[33m)[m
+Merge: 7618236 846a3f3
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:50:03 2021 +0900
+
+    Merge branch 'master' into mlee
+
+[33mcommit 7618236b90c1578b31f52cfc8f3f8bb9e2640fce[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:49:46 2021 +0900
+
+    add 88888
+
+[33mcommit 846a3f3f0124d013f7be3329ee0284bb0e2ba8f6[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: ef3e608 36b8ac4
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:44:59 2021 +0900
+
+    add 123
+
+[33mcommit 36b8ac405779225910e44096fdaee1104453fa9c[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:42:47 2021 +0900
+
+    123
+
+[33mcommit ef3e608858f923220ece21d9170ab6741326888d[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:20:21 2021 +0900
+
+     master
+
+[33mcommit 8f7ce62c27a4563ed1cef9950213fa8f263cae40[m
+Merge: e5894b3 cbf2e68
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:14:14 2021 +0900
+
+    Merge branch 'master' of https://github.com/2m-github/reqres into master
+
+[33mcommit cbf2e6827ff7c0fc1f4f5b106e4f49fa407e1ebe[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:12:54 2021 +0900
+
+    B
+
+[33mcommit e5894b327f24aa5156265133e1e893f563e2eacb[m
+Merge: 1bad149 8f47ed8
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 13:04:50 2021 +0900
+
+    합병
+
+[33mcommit 1bad149c9f66d4ac4a9481e77dd3785e02f38c67[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 12:50:05 2021 +0900
+
+    asdf
+
+[33mcommit 8f47ed89bb17b747f8483e839a125bfc74529e84[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 12:44:52 2021 +0900
+
+    B branch push
+
+[33mcommit b4c5dfedaeeb8263c62beecd94d5ace7aeee808a[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 10:51:01 2021 +0900
+
+    A 기능추가
+
+[33mcommit 47d1df99ba69fe305b343b936c3c67da29b55b29[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Jun 3 09:48:37 2021 +0900
+
+    branch test
+
+[33mcommit b0e32e3316bcbfa1c400fa5cca07e6ba33acbbc8[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Wed Jan 6 17:37:40 2021 +0900
+
+    README.md
+
+[33mcommit 846284db958d7bff7cd4be9e3e71ad4ccbd7899e[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Wed Jan 6 17:32:28 2021 +0900
+
+    ADUF
+
+[33mcommit ae6e467e6bb5a5e1f3065716e61345f55d1622f9[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Thu Dec 31 16:43:51 2020 +0900
+
+    login padd add
+
+[33mcommit 02c79764d261f2215ec21f9f11596e45ce657f72[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Mon Dec 21 18:01:42 2020 +0900
+
+    first
+
+[33mcommit 84cd91001aab5e3d320e52b0bdde8fff7aaade31[m
+Author: 2m-github <limin1403@gmail.com>
+Date:   Mon Dec 21 17:25:05 2020 +0900
+
+    init

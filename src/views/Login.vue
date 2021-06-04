@@ -114,9 +114,7 @@
     <p>branch merge test aasfasdf</p>
     <p>branch merge test </p>
     <p>B branch</p>
-    <h4>B branch 2</h4>
-    <p>master</p>
-    <span>123</span>
+    <div>abc</div>
   </v-form>
 </template>
 
@@ -197,13 +195,14 @@ export default {
           api.tokenAPI({email: this.email2, password: this.password2}).then(res => {
             console.log("res=========",res.data.token)
               this.token = res.data.token
+              console.log("변수", {[this.token]:'토큰'})
           }).catch(err => {
             console.log('token login error ', err)
           })
         }
     },
     mounted(){
-    
+      
     }
 }
 </script>
