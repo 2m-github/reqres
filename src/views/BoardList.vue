@@ -6,7 +6,7 @@
         label="Search"
         v-model.trim="searchVal"
         ref="searchValue"
-        @keypress="search()"
+        @input="search()"
         
       ></v-text-field>
       <v-btn color="white" @click="search()">검색</v-btn>
@@ -19,7 +19,7 @@
     <b-button v-b-tooltip.hover.top="'Tooltip!'" variant="primary" class="woshi" data-name="나는 css content 다">Top</b-button>
    <b-icon-arrow-up v-b-tooltip.hover.top="'Tooltip!'"></b-icon-arrow-up>
    <div class="box">
-    <table>
+    <!-- <table>
       <template v-for="(item,index) in users">
       <tr v-if="item.email.includes(searchVal)" :key="index" :style="[{color:'#fff'},styleObj]">
         
@@ -28,7 +28,7 @@
         
       </tr>
         </template>
-    </table>
+    </table> -->
 
     <table class="tbl">
       <template v-for="(item,index) in seachResult">
@@ -195,7 +195,8 @@ export default {
 
 }
 </script>
-<style>
+<style lang="scss">
+
 .woshi::after {content: attr(data-name);}
 .box {display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px;}
 .box table {border:1px solid gray;}
