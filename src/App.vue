@@ -4,7 +4,7 @@
     <navigation />
     
     <v-main>
-      <!-- 为应用程序提供正确的插槽 -->
+      <!-- 为应用程序提供正确的插槽... -->
       <v-container fluid>
         <router-view></router-view>
       </v-container>
